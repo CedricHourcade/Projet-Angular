@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="text-center mb-3">Notre catalogue de bières</h1>
+    <div class="row">
+        <div class="col-sm-4 col-md-12" *ngFor="let catalogue of catalog">
+            <ul class="list-group">
+                <li class="list-group-item">Nom de la Bières: {{catalogue.name}} et le degré d'alcool {{catalogue.abv}}°</li>
+              </ul>
+        </div>
+    </div>
+</div>
+
+<!-- JE FAIS UNE BOUCLE SUR LE TABLEAU NOMME 'CATALOG' -->
+    <!-- A CHAQUE ITERATION DE LA BOUCLE , LES DONNEES SONT STOCKES -->
+    <!-- DANS MA VARIABLE NOMME 'ITEM' -->
+
+    <!-- J'AFFICHE LE NOM ET LE DEGRE d'ALCOOL DE CHAQUE BIERE
+      LE 'NAME' ET LE 'ABV' SONT DES DONNES DE L'API -->

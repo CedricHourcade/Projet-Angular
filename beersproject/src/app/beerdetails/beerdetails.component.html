@@ -1,0 +1,20 @@
+<div class="container" *ngIf="beer">
+    <div class="card m-5">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img class="beer-img" [src]="beer.image_url" alt="Photo de la bière">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{beer.name}}</h5>
+            <p class="card-text">{{beer.description}}</p>
+            <p class="card-text">{{beer.abv}} degré</p>
+            <p class="card-text"><small class="text-muted">Brassé le :  {{beer.first_brewed}}</small></p>
+            <h6>Les associations culinaires : </h6>
+            <p>{{beer.food_pairing}}</p>
+            <button routerLink="/shop" class="btn btn-secondary">Retour à la boutique</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

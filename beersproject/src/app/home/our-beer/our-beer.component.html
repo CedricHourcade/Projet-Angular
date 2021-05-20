@@ -1,0 +1,12 @@
+<!-- Sert d'affichage pour les bieres -->
+<div class="container">
+    <h1 class="text-center mt-4">Nos meilleures bières</h1>
+    <div class="row m-5">
+        <div class="col-sm-4 text-center" *ngFor="let bieres of beers" >
+            <!-- ON BOUCLE SUR l'ATTRIBUT DE CLASSE 'BEERS' (QUI EST UN TABLEAU) -->
+            <!-- ON APELLE LE COMPONENT BEER-CARD AVEC A CHAQUE ITERATION UNE BIERE DU TABLEAU ('LET BEER') -->
+            <!-- [beer] fait réference a la variable que contient beer-card et bieres fait reference au tableaux de our-beer-->
+            <app-beer-card [beer]="bieres"></app-beer-card>
+        </div>
+    </div>
+</div>

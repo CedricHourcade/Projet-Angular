@@ -1,0 +1,25 @@
+.carousel .carousel-item {
+    height: 90vh;
+  }
+  
+  .carousel-item img {
+    min-height: 80vh;
+    position: absolute;
+    top : 0;
+    left: 0;
+    object-fit: cover;
+}
+
+@media (min-width: 360px) {
+    div.carousel-caption {
+        display: block!important;
+        margin-bottom: 55px;
+    }
+ }
+
+ @media (min-width: 900px) {
+    div.carousel-caption {
+        display: block!important;
+        margin-bottom: 0px
+    }
+ }

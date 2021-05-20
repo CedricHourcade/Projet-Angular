@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="text-center">Notre boutique officiel</h1>
+  <div class="row">
+    <div class="col-sm-12 col-md-4 text-center" *ngFor="let produit of products">
+      <!-- ON BOUCLE SUR l'ATTRIBUT DE CLASSE 'PRODUCTS' (QUI EST UN TABLEAU) -->
+      <!-- ON APELLE LE COMPONENT BEER-CARD AVEC A CHAQUE ITERATION UN PRODUIT DU TABLEAU ('LET PRODUCT') -->
+      <app-beer-card [beer]="produit"></app-beer-card>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
